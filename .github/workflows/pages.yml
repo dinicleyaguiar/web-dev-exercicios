@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "docs/**"
+      - "projeto-final/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -32,10 +33,17 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Build static site
+        run: |
+          rm -rf _site
+          mkdir -p _site/projeto-final
+          cp -R docs/. _site/
+          cp -R projeto-final/. _site/projeto-final/
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs
+          path: ./_site
 
       - name: Deploy to GitHub Pages
         id: deployment
