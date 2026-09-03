@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dev Summit 2026 — projeto final demonstrativo do módulo de HTML.">
+  <title>Dev Summit 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Poppins:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{font-family:"Poppins",sans-serif;color:#172033;background:#f6f8fb}*{box-sizing:border-box}body{margin:0}header,main,footer{width:min(980px,92%);margin:auto}header{padding:28px 0}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:#3155d9}h1,h2,h3{font-family:"Sora",sans-serif}h1{font-size:clamp(2.4rem,7vw,5.5rem);line-height:1;margin:.4em 0}.tag,code{font-family:"JetBrains Mono",monospace}.tag{color:#3155d9}section{padding:34px 0;border-top:1px solid #dce2ee}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}article{background:#fff;border:1px solid #dce2ee;border-radius:16px;padding:20px}table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:14px;text-align:left;border-bottom:1px solid #e5e9f2}form{display:grid;gap:14px;max-width:620px}label{font-weight:600}input,select,textarea,button{font:inherit;padding:12px;border-radius:10px;border:1px solid #cbd3e2;width:100%}button{background:#3155d9;color:#fff;border:0;font-weight:600;cursor:pointer}footer{padding:30px 0 50px;color:#69758a}@media(max-width:600px){table{font-size:.9rem;display:block;overflow:auto}}
+  </style>
+</head>
+<body>
+  <header>
+    <p class="tag">PROJETO FINAL • MÓDULO 01 • HTML</p>
+    <nav aria-label="Navegação principal">
+      <a href="#evento">Evento</a>
+      <a href="#programacao">Programação</a>
+      <a href="#palestrantes">Palestrantes</a>
+      <a href="#inscricao">Inscrição</a>
+    </nav>
+    <h1>Dev Summit 2026</h1>
+    <p>Um evento fictício para quem está começando na web e quer transformar fundamentos em projetos reais.</p>
+  </header>
+
+  <main>
+    <section id="evento">
+      <h2>Sobre o evento</h2>
+      <p>O <strong>Dev Summit 2026</strong> reúne estudantes, professores e profissionais para um dia de conteúdo sobre desenvolvimento web, carreira e comunidade.</p>
+      <h3>O que você vai encontrar</h3>
+      <ul>
+        <li>Palestras introdutórias sobre desenvolvimento web;</li>
+        <li>Apresentação de projetos de estudantes;</li>
+        <li>Espaço para networking e troca de experiências;</li>
+        <li>Desafios rápidos de HTML, CSS e JavaScript.</li>
+      </ul>
+      <address>
+        <strong>Local:</strong> Centro de Tecnologia — Auditório Principal<br>
+        <strong>Data:</strong> 24 de outubro de 2026<br>
+        <strong>Horário:</strong> 08:00 às 18:00
+      </address>
+    </section>
+
+    <section id="programacao">
+      <h2>Programação</h2>
+      <table>
+        <caption>Agenda principal do Dev Summit 2026</caption>
+        <thead><tr><th>Horário</th><th>Atividade</th><th>Trilha</th></tr></thead>
+        <tbody>
+          <tr><td>08:00</td><td>Credenciamento e boas-vindas</td><td>Comunidade</td></tr>
+          <tr><td>09:00</td><td>HTML: a estrutura da web</td><td>Fundamentos</td></tr>
+          <tr><td>10:30</td><td>CSS: transformando estrutura em interface</td><td>Front-end</td></tr>
+          <tr><td>14:00</td><td>JavaScript: interatividade no navegador</td><td>Programação</td></tr>
+          <tr><td>16:00</td><td>Mostra de projetos</td><td>Portfólio</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="palestrantes">
+      <h2>Palestrantes</h2>
+      <div class="grid">
+        <article>
+          <h3>Marina Costa</h3>
+          <p>Front-end Developer</p>
+          <p>Fala sobre HTML semântico, acessibilidade e construção de interfaces compreensíveis.</p>
+        </article>
+        <article>
+          <h3>Rafael Lima</h3>
+          <p>Software Engineer</p>
+          <p>Apresenta uma visão prática de carreira, Git e evolução de projetos pessoais.</p>
+        </article>
+        <article>
+          <h3>Carla Mendes</h3>
+          <p>UI Designer</p>
+          <p>Mostra como conteúdo, hierarquia e design trabalham juntos em experiências digitais.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="inscricao">
+      <h2>Inscrição</h2>
+      <p>Preencha os dados abaixo para simular uma inscrição no evento.</p>
+      <form action="#" method="get">
+        <div>
+          <label for="nome">Nome completo</label>
+          <input id="nome" name="nome" type="text" required autocomplete="name">
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div>
+          <label for="perfil">Perfil</label>
+          <select id="perfil" name="perfil" required>
+            <option value="">Selecione</option>
+            <option>Estudante</option>
+            <option>Professor</option>
+            <option>Profissional</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensagem">O que você espera aprender?</label>
+          <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+        </div>
+        <label><input type="checkbox" name="termos" required> Confirmo que os dados são apenas para esta demonstração.</label>
+        <button type="submit">Simular inscrição</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dev Summit 2026 • Projeto demonstrativo do módulo HTML</p>
+    <p><small>Construído para praticar estrutura, semântica, tabelas, listas, links e formulários.</small></p>
+  </footer>
+</body>
+</html>
