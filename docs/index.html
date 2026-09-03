@@ -12,8 +12,8 @@
     <a class="brand" href="#inicio" aria-label="Início">&lt;/&gt; web-dev-exercicios</a>
     <nav aria-label="Navegação principal">
       <a href="#trilha">Trilha</a>
+      <a href="#projetos-modulos">Projetos dos módulos</a>
       <a href="#projeto-final">Projeto final</a>
-      <a href="#como-usar">Como usar</a>
       <a class="github-link" href="https://github.com/dinicleyaguiar/web-dev-exercicios">GitHub ↗</a>
     </nav>
   </header>
@@ -23,22 +23,22 @@
       <div class="hero-copy">
         <span class="eyebrow">TRILHA PRÁTICA • NÍVEL INICIANTE</span>
         <h1>Aprenda desenvolvimento web construindo.</h1>
-        <p>Uma sequência de 18 atividades práticas para evoluir dos fundamentos de HTML até um projeto integrador com CSS, JavaScript, Git e GitHub.</p>
+        <p>Uma sequência prática para evoluir dos fundamentos de HTML até aplicações interativas com CSS, JavaScript, Git e GitHub.</p>
         <div class="actions">
           <a class="button primary" href="#trilha">Começar a trilha</a>
-          <a class="button secondary" href="https://github.com/dinicleyaguiar/web-dev-exercicios/fork">Fazer fork</a>
+          <a class="button secondary" href="#projetos-modulos">Ver projetos finais</a>
         </div>
       </div>
       <div class="terminal" aria-label="Resumo da trilha em formato de terminal">
         <div class="terminal-bar"><span></span><span></span><span></span></div>
         <pre><code><span class="prompt">dinicley@web</span>:~$ trilha --status
 
-✓ HTML ............. 6 exercícios
-✓ CSS .............. 5 exercícios
-✓ JavaScript ....... 6 exercícios
-✓ Projeto final .... 1 desafio
+✓ HTML ............. 6 exercícios + projeto
+✓ CSS .............. 5 exercícios + projeto
+✓ JavaScript ....... 6 exercícios + projeto
+✓ Integrador ....... 1 projeto completo
 
-<span class="success">18 atividades prontas para praticar</span></code></pre>
+<span class="success">fundamentos → interface → interatividade</span></code></pre>
       </div>
     </section>
 
@@ -54,7 +54,7 @@
           <div class="card-icon">🌐</div>
           <span class="card-number">MÓDULO 01</span>
           <h3>HTML</h3>
-          <p>Estrutura, textos, listas, links, imagens, tabelas e formulários.</p>
+          <p>Estrutura, textos, listas, links, imagens, tabelas, formulários e semântica.</p>
           <div class="meta"><span>6 exercícios</span><span>Fundamentos</span></div>
           <a href="https://github.com/dinicleyaguiar/web-dev-exercicios/tree/main/modulo-01-html">Abrir módulo →</a>
         </article>
@@ -79,11 +79,48 @@
       </div>
     </section>
 
+    <section class="section" id="projetos-modulos">
+      <div class="section-heading">
+        <span class="eyebrow">02 • PROJETOS FINAIS DOS MÓDULOS</span>
+        <h2>Um fechamento prático em cada etapa.</h2>
+        <p>Os projetos abaixo mostram como os conteúdos de cada módulo se conectam em uma entrega real.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🏛️</div>
+          <span class="card-number">PROJETO HTML</span>
+          <h3>Dev Summit 2026</h3>
+          <p>Página de evento com HTML semântico, navegação, listas, tabela, endereço e formulário.</p>
+          <div class="meta"><span>HTML</span><span>Semântica</span><span>Formulários</span></div>
+          <a href="./html/">Abrir projeto publicado →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🪐</div>
+          <span class="card-number">PROJETO CSS</span>
+          <h3>Orbit</h3>
+          <p>Landing page responsiva com design system, Flexbox, Grid, cards, preços e estados visuais.</p>
+          <div class="meta"><span>CSS</span><span>Grid</span><span>Responsivo</span></div>
+          <a href="./css/">Abrir projeto publicado →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">✅</div>
+          <span class="card-number">PROJETO JAVASCRIPT</span>
+          <h3>FocusList</h3>
+          <p>Gerenciador de tarefas com DOM, filtros, eventos, condicionais, funções e localStorage.</p>
+          <div class="meta"><span>JavaScript</span><span>DOM</span><span>localStorage</span></div>
+          <a href="./javascript/">Abrir projeto publicado →</a>
+        </article>
+      </div>
+    </section>
+
     <section class="project" id="projeto-final">
       <div>
-        <span class="eyebrow">02 • PROJETO FINAL</span>
-        <h2>Landing Page Interativa e Responsiva</h2>
-        <p>O desafio final integra HTML semântico, identidade visual em CSS, responsividade, validação de formulário, manipulação do DOM, Git e GitHub Pages.</p>
+        <span class="eyebrow">03 • PROJETO INTEGRADOR</span>
+        <h2>Nexo Studio — Landing Page Interativa</h2>
+        <p>O fechamento geral integra HTML semântico, identidade visual em CSS, responsividade, validação de formulário, filtros, FAQ, tema claro/escuro e manipulação do DOM.</p>
         <div class="project-tags">
           <span>HTML semântico</span><span>CSS responsivo</span><span>JavaScript</span><span>DOM</span><span>Git</span><span>GitHub Pages</span>
         </div>
@@ -107,14 +144,14 @@
 
     <section class="section" id="como-usar">
       <div class="section-heading">
-        <span class="eyebrow">03 • COMO USAR</span>
+        <span class="eyebrow">04 • COMO USAR</span>
         <h2>Seu progresso fica no GitHub</h2>
       </div>
       <div class="steps">
         <div><span>01</span><h3>Fork</h3><p>Crie sua própria cópia do repositório.</p></div>
         <div><span>02</span><h3>Pratique</h3><p>Resolva cada exercício dentro da pasta correspondente.</p></div>
         <div><span>03</span><h3>Commit</h3><p>Registre pequenas etapas com mensagens claras.</p></div>
-        <div><span>04</span><h3>Publique</h3><p>Use GitHub Pages para apresentar seu projeto final.</p></div>
+        <div><span>04</span><h3>Publique</h3><p>Use GitHub Pages para apresentar sua evolução.</p></div>
       </div>
     </section>
   </main>
