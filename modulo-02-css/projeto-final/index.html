@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Orbit — landing page demonstrativa do projeto final do módulo CSS.">
+  <title>Orbit — Produtividade sem ruído</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#inicio">Orbit<span>.</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#recursos">Recursos</a>
+        <a href="#planos">Planos</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+      <a class="button ghost" href="#planos">Começar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">PROJETO FINAL • MÓDULO 02 • CSS</span>
+          <h1>Produtividade sem <span>ruído.</span></h1>
+          <p>Uma landing page fictícia criada para demonstrar tipografia, cores, box model, Flexbox, Grid, cards e responsividade.</p>
+          <div class="actions">
+            <a class="button primary" href="#recursos">Explorar recursos</a>
+            <a class="button ghost" href="#planos">Ver planos</a>
+          </div>
+          <div class="mini-stats">
+            <div><strong>12k+</strong><span>usuários</span></div>
+            <div><strong>98%</strong><span>satisfação</span></div>
+            <div><strong>24/7</strong><span>disponível</span></div>
+          </div>
+        </div>
+        <div class="dashboard" aria-hidden="true">
+          <div class="dashboard-top"><span></span><span></span><span></span></div>
+          <div class="dashboard-content">
+            <div class="side"></div>
+            <div class="panel">
+              <div class="panel-title"></div>
+              <div class="panel-line short"></div>
+              <div class="chart">
+                <i style="--h:38%"></i><i style="--h:56%"></i><i style="--h:42%"></i><i style="--h:72%"></i><i style="--h:88%"></i><i style="--h:68%"></i>
+              </div>
+              <div class="widget-row"><div></div><div></div><div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="recursos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">01 • RECURSOS</span>
+          <h2>Uma interface pensada para foco.</h2>
+          <p>Cada card demonstra organização visual, espaçamento, bordas, estados de hover e composição responsiva.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><span>01</span><h3>Organização simples</h3><p>Projetos, tarefas e prioridades em uma estrutura visual fácil de entender.</p></article>
+          <article class="feature-card featured"><span>02</span><h3>Painéis inteligentes</h3><p>Informações distribuídas em cards e grids que se adaptam ao tamanho da tela.</p></article>
+          <article class="feature-card"><span>03</span><h3>Foco no essencial</h3><p>Uma paleta reduzida, boa hierarquia e contraste para manter atenção no conteúdo.</p></article>
+          <article class="feature-card"><span>04</span><h3>Layout responsivo</h3><p>Grid fluido, tipografia escalável e componentes ajustados para dispositivos móveis.</p></article>
+          <article class="feature-card"><span>05</span><h3>Design consistente</h3><p>Variáveis CSS, padrões de espaçamento e componentes reutilizáveis.</p></article>
+          <article class="feature-card"><span>06</span><h3>Estados visuais</h3><p>Links, botões e cards reagem ao hover e ao foco sem depender de JavaScript.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="planos">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow">02 • PLANOS</span>
+          <h2>Escolha seu ritmo.</h2>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card"><span class="plan">START</span><strong>R$ 0</strong><p>Para começar e organizar projetos pessoais.</p><ul><li>3 projetos</li><li>20 tarefas</li><li>1 painel</li></ul><a class="button ghost" href="#">Começar grátis</a></article>
+          <article class="price-card highlight"><span class="badge">POPULAR</span><span class="plan">PRO</span><strong>R$ 29</strong><p>Para quem precisa de mais espaço e visão.</p><ul><li>Projetos ilimitados</li><li>Painéis avançados</li><li>Temas personalizados</li></ul><a class="button primary" href="#">Escolher Pro</a></article>
+          <article class="price-card"><span class="plan">TEAM</span><strong>R$ 79</strong><p>Para pequenos times trabalhando juntos.</p><ul><li>Até 10 pessoas</li><li>Compartilhamento</li><li>Histórico completo</li></ul><a class="button ghost" href="#">Conhecer Team</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <div><span class="eyebrow">03 • SOBRE</span><h2>CSS é mais que “deixar bonito”.</h2></div>
+        <div><p>Este projeto mostra que CSS também organiza informação, define hierarquia, cria ritmo visual e adapta a experiência a diferentes telas.</p><p>A aplicação não usa JavaScript. Toda a experiência visual é construída apenas com HTML e CSS.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><span>Orbit.</span><p>Projeto demonstrativo do módulo CSS.</p></div></footer>
+</body>
+</html>
