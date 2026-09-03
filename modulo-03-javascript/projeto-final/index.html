@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FocusList — aplicação demonstrativa do projeto final do módulo JavaScript.">
+  <title>FocusList — Organize suas tarefas</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main class="app-shell">
+    <section class="intro">
+      <span class="eyebrow">PROJETO FINAL • MÓDULO 03 • JAVASCRIPT</span>
+      <h1>Focus<span>List.</span></h1>
+      <p>Uma aplicação simples para organizar tarefas e demonstrar DOM, eventos, funções, condicionais, loops e persistência local.</p>
+      <div class="stats">
+        <div><strong id="stat-total">0</strong><span>tarefas</span></div>
+        <div><strong id="stat-pending">0</strong><span>pendentes</span></div>
+        <div><strong id="stat-done">0</strong><span>concluídas</span></div>
+      </div>
+    </section>
+
+    <section class="board" aria-label="Gerenciador de tarefas">
+      <form id="task-form" class="task-form" novalidate>
+        <div class="field grow">
+          <label for="task-title">Nova tarefa</label>
+          <input id="task-title" name="title" type="text" maxlength="80" placeholder="Ex.: revisar exercício de funções" autocomplete="off">
+          <small id="task-error" class="error" aria-live="polite"></small>
+        </div>
+        <div class="field">
+          <label for="task-priority">Prioridade</label>
+          <select id="task-priority" name="priority">
+            <option value="normal">Normal</option>
+            <option value="alta">Alta</option>
+            <option value="baixa">Baixa</option>
+          </select>
+        </div>
+        <button class="btn primary" type="submit">Adicionar</button>
+      </form>
+
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filtrar tarefas">
+          <button class="filter active" type="button" data-filter="todas">Todas</button>
+          <button class="filter" type="button" data-filter="pendentes">Pendentes</button>
+          <button class="filter" type="button" data-filter="concluidas">Concluídas</button>
+        </div>
+        <button id="clear-done" class="btn ghost" type="button">Limpar concluídas</button>
+      </div>
+
+      <div id="task-list" class="task-list" aria-live="polite"></div>
+
+      <template id="task-template">
+        <article class="task-card">
+          <button class="check" type="button" aria-label="Alternar conclusão">✓</button>
+          <div class="task-copy">
+            <h2></h2>
+            <div class="task-meta"><span class="priority"></span><time></time></div>
+          </div>
+          <button class="delete" type="button" aria-label="Excluir tarefa">×</button>
+        </article>
+      </template>
+
+      <div id="empty-state" class="empty-state">
+        <span>✓</span>
+        <h2>Nenhuma tarefa por aqui.</h2>
+        <p>Adicione uma tarefa ou troque o filtro atual.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>FocusList • Projeto demonstrativo do módulo JavaScript</p>
+    <button id="reset-app" type="button">Restaurar exemplo inicial</button>
+  </footer>
+</body>
+</html>
