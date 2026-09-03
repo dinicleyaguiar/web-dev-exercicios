@@ -6,6 +6,9 @@ on:
       - main
     paths:
       - "docs/**"
+      - "modulo-01-html/projeto-final/**"
+      - "modulo-02-css/projeto-final/**"
+      - "modulo-03-javascript/projeto-final/**"
       - "projeto-final/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
@@ -36,8 +39,11 @@ jobs:
       - name: Build static site
         run: |
           rm -rf _site
-          mkdir -p _site/projeto-final
+          mkdir -p _site/html _site/css _site/javascript _site/projeto-final
           cp -R docs/. _site/
+          cp -R modulo-01-html/projeto-final/. _site/html/
+          cp -R modulo-02-css/projeto-final/. _site/css/
+          cp -R modulo-03-javascript/projeto-final/. _site/javascript/
           cp -R projeto-final/. _site/projeto-final/
 
       - name: Upload Pages artifact
